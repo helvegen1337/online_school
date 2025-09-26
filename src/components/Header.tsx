@@ -10,42 +10,42 @@ export default function Header() {
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="section-container">
         <div className="flex justify-between items-center py-4">
-          {/* Логотип */}
+          {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-hockey-red rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-hockey-blue rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg">SH</span>
             </div>
             <span className="text-2xl font-bold text-hockey-dark">Smart Hockey</span>
           </Link>
 
-          {/* Навигация */}
+          {/* Contact phone */}
+          <div className="hidden md:block text-hockey-dark font-medium">
+            +7 (999) 123-45-67
+          </div>
+
+          {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-hockey-red font-medium transition duration-300">
+            <Link href="/" className="text-gray-700 hover:text-hockey-blue font-medium transition duration-300">
               Главная
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-hockey-red font-medium transition duration-300">
-              О школе
+            <Link href="/schedule" className="text-gray-700 hover:text-hockey-blue font-medium transition duration-300">
+              Расписание
             </Link>
-            <Link href="/courses" className="text-gray-700 hover:text-hockey-red font-medium transition duration-300">
-              Курсы
+            <Link href="/team" className="text-gray-700 hover:text-hockey-blue font-medium transition duration-300">
+              Команда
             </Link>
-            <Link href="/teachers" className="text-gray-700 hover:text-hockey-red font-medium transition duration-300">
-              Преподаватели
+            <Link href="/program" className="text-gray-700 hover:text-hockey-blue font-medium transition duration-300">
+              Программа
             </Link>
-            <Link href="/reviews" className="text-gray-700 hover:text-hockey-red font-medium transition duration-300">
-              Отзывы
+            <Link href="/neurofitness" className="text-gray-700 hover:text-hockey-blue font-medium transition duration-300">
+              Нейрофитнес
             </Link>
-            <Link href="/contacts" className="text-gray-700 hover:text-hockey-red font-medium transition duration-300">
+            <Link href="/contacts" className="text-gray-700 hover:text-hockey-blue font-medium transition duration-300">
               Контакты
-            </Link>
-            
-            {/* CTA кнопка в шапке */}
-            <Link href="/courses" className="btn-primary ml-4">
-              Купить курс
             </Link>
           </nav>
 
-          {/* Мобильное меню */}
+          {/* Mobile menu button */}
           <button 
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -58,31 +58,31 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Мобильное меню */}
+        {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-4">
-              <Link href="/" className="text-gray-700 hover:text-hockey-red font-medium">
+              <Link href="/" className="text-gray-700 hover:text-hockey-blue font-medium">
                 Главная
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-hockey-red font-medium">
-                О школе
+              <Link href="/schedule" className="text-gray-700 hover:text-hockey-blue font-medium">
+                Расписание
               </Link>
-              <Link href="/courses" className="text-gray-700 hover:text-hockey-red font-medium">
-                Курсы
+              <Link href="/team" className="text-gray-700 hover:text-hockey-blue font-medium">
+                Команда
               </Link>
-              <Link href="/teachers" className="text-gray-700 hover:text-hockey-red font-medium">
-                Преподаватели
+              <Link href="/program" className="text-gray-700 hover:text-hockey-blue font-medium">
+                Программа
               </Link>
-              <Link href="/reviews" className="text-gray-700 hover:text-hockey-red font-medium">
-                Отзывы
+              <Link href="/neurofitness" className="text-gray-700 hover:text-hockey-blue font-medium">
+                Нейрофитнес
               </Link>
-              <Link href="/contacts" className="text-gray-700 hover:text-hockey-red font-medium">
+              <Link href="/contacts" className="text-gray-700 hover:text-hockey-blue font-medium">
                 Контакты
               </Link>
-              <Link href="/courses" className="btn-primary w-full text-center">
-                Купить курс
-              </Link>
+              <div className="pt-4 text-hockey-dark font-medium">
+                +7 (999) 123-45-67
+              </div>
             </div>
           </div>
         )}

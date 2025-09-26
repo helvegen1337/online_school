@@ -8,17 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#eff6ff',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-        },
-        hockey: {
-          red: '#dc2626',
-          blue: '#1e40af',
-          dark: '#1f2937',
-        }
+        'hockey-blue': '#1e40af',
+        'hockey-orange': '#ea580c',
+        'hockey-dark': '#1f2937',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
