@@ -14,11 +14,11 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-hockey-red hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105;
+    @apply bg-hockey-blue text-hockey-orange font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 hover:bg-hockey-orange hover:text-white;
   }
   
   .btn-secondary {
-    @apply bg-hockey-blue hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300;
+    @apply bg-hockey-dark hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300;
   }
   
   .section-container {

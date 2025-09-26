@@ -3,182 +3,184 @@ import Link from 'next/link'
 export default function HomePage() {
   return (
     <div>
-      {/* Hero секция */}
+      {/* Hero section */}
       <section className="bg-gradient-to-r from-hockey-dark to-hockey-blue text-white py-20">
         <div className="section-container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              Стань <span className="text-hockey-red">профессиональным</span> хоккеистом
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Профессиональная онлайн-школа хоккея для развития <span className="text-hockey-orange">интеллекта</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
-              Онлайн обучение хоккею с элементами нейрофитнеса. 
-              Развивай силу, скорость и технику с лучшими тренерами мира!
+              Структурированные 9-месячные программы, сочетающие теорию хоккея, видеоанализ и спортивную психологию
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link href="/courses" className="btn-primary text-xl px-8 py-4">
-                🏒 КУПИТЬ КУРС СЕЙЧАС
-              </Link>
-              <Link href="/courses" className="btn-secondary text-xl px-8 py-4">
-                Посмотреть курсы
+              <Link href="/schedule" className="btn-primary text-xl px-8 py-4">
+                Выбрать расписание
               </Link>
             </div>
             
-            <p className="text-lg text-yellow-300 font-semibold">
-              ⚡ Скидка 30% только сегодня! Не упусти шанс!
+            <p className="text-lg text-hockey-orange font-semibold">
+              Комплексная подписка всего за 6500₽ вместо 10000₽
             </p>
           </div>
         </div>
       </section>
 
-      {/* Преимущества */}
+      {/* Program overview */}
       <section className="py-16 bg-gray-50">
         <div className="section-container">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Почему выбирают <span className="text-hockey-red">Smart Hockey</span>?
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Наши <span className="text-hockey-blue">программы</span> развития
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <div className="text-4xl mb-4">🧠</div>
-              <h3 className="text-xl font-bold mb-4">Нейрофитнес</h3>
+              <h3 className="text-xl font-bold mb-4">Теория хоккея</h3>
               <p className="text-gray-600 mb-6">
-                Уникальная методика развития нейронных связей для улучшения координации и скорости реакции
+                Фундаментальные знания о стратегии, тактике и правилах игры
               </p>
-              <Link href="/courses" className="btn-primary">
-                Узнать больше
-              </Link>
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <div className="text-4xl mb-4">💪</div>
-              <h3 className="text-xl font-bold mb-4">Физическая подготовка</h3>
+              <h3 className="text-xl font-bold mb-4">Видеоанализ</h3>
               <p className="text-gray-600 mb-6">
-                Комплексные программы развития силы, выносливости и гибкости специально для хоккеистов
+                Изучение игровых ситуаций и развитие хоккейного мышления
               </p>
-              <Link href="/courses" className="btn-primary">
-                Начать тренировки
-              </Link>
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <div className="text-4xl mb-4">🏆</div>
-              <h3 className="text-xl font-bold mb-4">Профессиональные тренеры</h3>
+              <h3 className="text-xl font-bold mb-4">Спортивная психология</h3>
               <p className="text-gray-600 mb-6">
-                Обучение от действующих игроков НХЛ и мастеров спорта международного класса
+                Развитие концентрации, уверенности и командного взаимодействия
               </p>
-              <Link href="/teachers" className="btn-primary">
-                Познакомиться с тренерами
-              </Link>
             </div>
-          </div>
-          
-          <div className="text-center">
-            <Link href="/courses" className="btn-primary text-2xl px-12 py-4">
-              🔥 ПОЛУЧИТЬ ДОСТУП КО ВСЕМ КУРСАМ
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* Популярные курсы */}
+      {/* Pricing */}
       <section className="py-16">
         <div className="section-container">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Популярные курсы
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Варианты <span className="text-hockey-blue">обучения</span>
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {/* Курс 1 */}
-            <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-hockey-red to-red-700 flex items-center justify-center">
-                <span className="text-white text-6xl">🏒</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Comprehensive subscription */}
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden border-2 border-hockey-blue">
+              <div className="bg-hockey-blue text-white p-4 text-center">
+                <h3 className="text-xl font-bold">Комплексная подписка</h3>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Основы хоккея</h3>
-                <p className="text-gray-600 mb-4">
-                  Базовые навыки катания, ведения шайбы и броска для начинающих
-                </p>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-bold text-hockey-red">4,990₽</span>
-                  <span className="text-gray-500 line-through">7,990₽</span>
+                <div className="flex justify-center items-baseline mb-4">
+                  <span className="text-3xl font-bold text-hockey-blue">6500₽</span>
+                  <span className="text-gray-500 line-through ml-2">10000₽</span>
                 </div>
-                <Link href="/courses/basics" className="btn-primary w-full text-center block">
-                  КУПИТЬ СЕЙЧАС
+                <ul className="mb-6 space-y-2">
+                  <li className="flex items-center">
+                    <span className="text-hockey-orange mr-2">✓</span>
+                    <span>Все занятия по теории, видеоанализу и психологии</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-hockey-orange mr-2">✓</span>
+                    <span>Групповые занятия по расписанию</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-hockey-orange mr-2">✓</span>
+                    <span>Доступ к записям занятий</span>
+                  </li>
+                </ul>
+                <Link href="/schedule" className="btn-primary w-full text-center block">
+                  Выбрать расписание
                 </Link>
               </div>
             </div>
 
-            {/* Курс 2 */}
-            <div className="bg-white rounded-lg shadow-xl overflow-hidden border-4 border-yellow-400 relative">
-              <div className="absolute top-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold">
-                ХИТ ПРОДАЖ
-              </div>
-              <div className="h-48 bg-gradient-to-br from-hockey-blue to-blue-700 flex items-center justify-center">
-                <span className="text-white text-6xl">🧠</span>
+            {/* SFP + Neurofitness */}
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+              <div className="bg-hockey-dark text-white p-4 text-center">
+                <h3 className="text-xl font-bold">SFP + Нейрофитнес</h3>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Нейрофитнес для хоккеистов</h3>
-                <p className="text-gray-600 mb-4">
-                  Революционная методика развития мозга и координации движений
-                </p>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-bold text-hockey-red">9,990₽</span>
-                  <span className="text-gray-500 line-through">14,990₽</span>
+                <div className="flex justify-center items-baseline mb-4">
+                  <span className="text-3xl font-bold text-hockey-blue">2500₽</span>
                 </div>
-                <Link href="/courses/neurofitness" className="btn-primary w-full text-center block">
-                  КУПИТЬ СЕЙЧАС
+                <ul className="mb-6 space-y-2">
+                  <li className="flex items-center">
+                    <span className="text-hockey-orange mr-2">✓</span>
+                    <span>Индивидуальные занятия</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-hockey-orange mr-2">✓</span>
+                    <span>Развитие скорости мышления и реакции</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-hockey-orange mr-2">✓</span>
+                    <span>Улучшение концентрации внимания</span>
+                  </li>
+                </ul>
+                <Link href="/neurofitness" className="btn-secondary w-full text-center block">
+                  Подробнее
                 </Link>
               </div>
             </div>
 
-            {/* Курс 3 */}
+            {/* Individual Psychology */}
             <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-green-600 to-green-700 flex items-center justify-center">
-                <span className="text-white text-6xl">💪</span>
+              <div className="bg-hockey-dark text-white p-4 text-center">
+                <h3 className="text-xl font-bold">Индивидуальная психология</h3>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Силовая подготовка</h3>
-                <p className="text-gray-600 mb-4">
-                  Комплексная программа развития силы и выносливости
-                </p>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-2xl font-bold text-hockey-red">6,990₽</span>
-                  <span className="text-gray-500 line-through">9,990₽</span>
+                <div className="flex justify-center items-baseline mb-4">
+                  <span className="text-3xl font-bold text-hockey-blue">4500₽</span>
                 </div>
-                <Link href="/courses/strength" className="btn-primary w-full text-center block">
-                  КУПИТЬ СЕЙЧАС
+                <ul className="mb-6 space-y-2">
+                  <li className="flex items-center">
+                    <span className="text-hockey-orange mr-2">✓</span>
+                    <span>Работа с личным психологом</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-hockey-orange mr-2">✓</span>
+                    <span>Развитие уверенности в себе</span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-hockey-orange mr-2">✓</span>
+                    <span>Психологическая подготовка к играм</span>
+                  </li>
+                </ul>
+                <Link href="/program" className="btn-secondary w-full text-center block">
+                  Подробнее
                 </Link>
               </div>
             </div>
-          </div>
-          
-          <div className="text-center">
-            <Link href="/courses" className="btn-secondary text-xl px-8 py-4">
-              Посмотреть все курсы
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* CTA секция */}
-      <section className="bg-hockey-red text-white py-16">
-        <div className="section-container text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Не откладывай свой успех на завтра!
+      {/* Testimonials */}
+      <section className="py-16 bg-gray-100">
+        <div className="section-container">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Отзывы <span className="text-hockey-blue">родителей</span>
           </h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Тысячи хоккеистов уже улучшили свою игру с помощью наших курсов. 
-            Присоединяйся к ним и стань лучшей версией себя!
-          </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/courses" className="bg-white text-hockey-red font-bold py-4 px-8 rounded-lg text-xl hover:bg-gray-100 transition duration-300">
-              🚀 КУПИТЬ КУРС СО СКИДКОЙ
-            </Link>
-            <Link href="/contacts" className="border-2 border-white text-white font-bold py-4 px-8 rounded-lg text-xl hover:bg-white hover:text-hockey-red transition duration-300">
-              Получить консультацию
-            </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <p className="text-gray-600 mb-4 italic">
+                "Мой сын стал значительно лучше понимать игру после занятий в Smart Hockey. 
+                Особенно impressed результатами по психологии - стал более уверенным на льду."
+              </p>
+              <p className="font-bold">Анна Петрова, мама Максима (9 лет)</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <p className="text-gray-600 mb-4 italic">
+                "Отличная структурированная программа. Ребенок развивается по всем направлениям - 
+                теория, практика и психологическая подготовка. Цены вполне адекватные для такого уровня обучения."
+              </p>
+              <p className="font-bold">Сергей Иванов, папа Алексея (11 лет)</p>
+            </div>
           </div>
         </div>
       </section>
